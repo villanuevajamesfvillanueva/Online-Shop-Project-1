@@ -5,16 +5,19 @@
 <p>Node.js + Express web server and MongoDB Atlas for backend;</p>
 <p>HTML, CSS, vanilla javascript for frontend;</p>
 
-<div width="80%">
+<div>
    <img align="left" src="https://github.com/villanuevajamesfvillanueva/Online-Shop-Project-1/blob/main/public/images/for_readme/part1.gif?raw=true">
    <img align="right" src="https://github.com/villanuevajamesfvillanueva/Online-Shop-Project-1/blob/main/public/images/for_readme/part2.gif?raw=true">
 </div>
 
-![alt text](https://github.com/villanuevajamesfvillanueva/Online-Shop-Project-1/blob/main/public/images/for_readme/part1.gif?raw=true)
-   ![alt text](https://github.com/villanuevajamesfvillanueva/Online-Shop-Project-1/blob/main/public/images/for_readme/part2.gif?raw=true)<br/><br/>
-![alt text](https://github.com/villanuevajamesfvillanueva/Online-Shop-Project-1/blob/main/public/images/for_readme/part3.gif?raw=true)
-![alt text](https://github.com/villanuevajamesfvillanueva/Online-Shop-Project-1/blob/main/public/images/for_readme/part4.gif?raw=true)<br/><br/>
-![alt text](https://github.com/villanuevajamesfvillanueva/Online-Shop-Project-1/blob/main/public/images/for_readme/part5.gif?raw=true)<br/>
+<div>
+   <img align="left" src="https://github.com/villanuevajamesfvillanueva/Online-Shop-Project-1/blob/main/public/images/for_readme/part3.gif?raw=true">
+   <img align="right" src="https://github.com/villanuevajamesfvillanueva/Online-Shop-Project-1/blob/main/public/images/for_readme/part4.gif?raw=true">
+</div>
+
+<div>
+   <img align="center" src="https://github.com/villanuevajamesfvillanueva/Online-Shop-Project-1/blob/main/public/images/for_readme/part5.gif?raw=true">
+</div>
 
 TODOs:
 <ul>
