@@ -18,13 +18,13 @@ const app = express();
 const dbName = 'OnlineShopProj1';
 const dbURI = `mongodb+srv://${mongodbUser}:${mongodbPass}@onlineshopproj1.2iew8.mongodb.net/${dbName}?retryWrites=true&w=majority`;
 
-const PORT = process.env.PORT || 3000;
+
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })   //async task
     .then(result => {
         //connect to db before listening on port
         console.log('connected to db...');
-        app.listen(PORT, () => {
+        app.listen(process.env.PORT || 3000, () => {
             console.log('listening on port 3000...');
         });
     })
