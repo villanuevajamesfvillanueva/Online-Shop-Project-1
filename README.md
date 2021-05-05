@@ -10,6 +10,8 @@ HTML, CSS, vanilla javascript for frontend; <br/>
 ![alt text](https://github.com/villanuevajamesfvillanueva/Online-Shop-Project-1/blob/main/public/images/bottledwater.jpg?raw=true)
 
 TODOs:<br/>
-  -add 'buy now' functionality <br/>
-  -add more payment option (preferably gcash and paypal) <br/>
-  -deploy <br/>
+<ul>
+  <li>add 'buy now' functionality</li>
+  <li>add more payment option (preferably gcash and paypal)</li>
+  <li>deploy</li>
+<ul>
