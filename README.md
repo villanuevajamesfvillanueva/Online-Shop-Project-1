@@ -3,7 +3,7 @@
 
 <p>Made using paymongo api;</p>
 <p>Node.js + Express web server and MongoDB Atlas for backend;</p>
-<p>HTML, CSS, vanilla javascript for frontend;</p>
+<p>HTML, EJS, CSS, vanilla javascript for frontend;</p>
 
 <div>
    <img align="left" src="https://github.com/villanuevajamesfvillanueva/Online-Shop-Project-1/blob/main/public/images/for_readme/part1.gif?raw=true">
