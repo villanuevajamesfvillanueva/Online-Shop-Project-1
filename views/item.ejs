@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs')%>
+</head>
+<body>
+    <%- include('./partials/nav.ejs')%>
+    <main>
+        <div class="product-page">
+          
+            <div class="slider">
+                <% for (var i = 0; i < item.carousel_src.length; i++) { %>
+                    <% if (i <= 0) { %>
+                        <input type="radio" name="slider" id="slide<%= i+1%>" checked>
+                    <% } else {%>
+                        <input type="radio" name="slider" id="slide<%= i+1%>">
+                    <% } %>
+                <% }; %>
+                <div class="slides">
+                    <div class="overflow">
+                        <div class="inner">  
+                            <% for (var i = 0; i < item.carousel_src.length; i++) { %>
+                                <div class="slide slide_<%= i+1%>">
+                                    <img class="item-image" src="<%= item.carousel_src[i] %>" alt="product image">
+                                </div>
+                            <% }; %>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bullets">
+                    <% for (var i = 0; i < item.carousel_src.length; i++) { %>
+                        <label for="slide<%= i+1%>"></label>
+                    <% }; %>       
+                </div>
+            </div>
+
+            <span class="item-name" data-item-id="<%= item.id %>"><%= item.name %></span>
+            <span class="item-price">Php <%= item.price / 100 %></span>
+            <p class="product-desc"><%= item.desc%></p>
+        
+            <div class="quantity">
+                <span class="input-prev">&#8211;</span>
+                <input class="item-quantity" type="number" value="1">
+                <span class="input-next">+</span>
+            </div>
+            <div class="add-to-cart">ADD TO CART</div>
+            <div class="buy-it-now">BUY IT NOW</div>
+        </div>
+    </main>
+
+    <%- include('./partials/footer.ejs')%>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="nav.js"></script>
+</body>
+
+</html>

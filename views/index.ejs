@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs')%>
+    
+    <main>
+        <section class="cta">
+            <div class="slider">
+                <% for (var i = 0; i < buyNow.length; i++) { %>
+                    <% if (i <= 0) { %>
+                        <input type="radio" name="slider" id="cta_slide<%= i+1%>" checked>
+                    <% } else {%>
+                        <input type="radio" name="slider" id="cta_slide<%= i+1%>">
+                    <% } %>
+                <% }; %>
+                <div class="slides">
+                    <div class="overflow">
+                        <div class="inner">  
+                            <% for (var i = 0; i < buyNow.length; i++) { %>
+                                <div class="slide slide_<%= i+1%>">
+                                    <img class="item-image" src="<%= buyNow[i].src %>" alt="product image">
+                                    <div class="cta-buynow"><span>BUY NOW</span></div>
+                                </div>
+                            <% }; %>
+                        </div>
+                    </div>
+                </div>
+                <div class="bullets">
+                    <% for (var i = 0; i < buyNow.length; i++) { %>
+                        <label for="cta_slide<%= i+1%>"></label>
+                    <% }; %>       
+                </div>
+            </div>
+
+        </section>
+        
+        <section class="our-favorites">
+            <h2 class="section-header">OUR FAVORITES</h2>
+            <div class="cards-container">
+                <% favorites.forEach(function(item) { %>
+                    <a href="<%= item.route%>">
+                        <div class="card-item" data-item-id="<%= item.id %>">
+                            <img class="item-image" src="<%= item.src %>">
+                            <span class="item-name"><%= item.name %></span>
+                            <span class="item-price">Php
+                                <span ><%= item.price / 100 %></span>
+                            </span>
+                        </div>
+                    </a>
+                <% }) %>
+            </div>
+        </section>
+
+        <section class="index all-products">
+            <h2 class="section-header">WHAT'S NEW?</h2>
+        </section>
+    </main>
+    
+    <%- include('./partials/footer.ejs')%>
+    <script>
+        if (localStorage.getItem("total") === null) localStorage.setItem("total", 0);
+    </script>
+    <script type="module" src="nav.js"></script>
+</body>
+</html>
