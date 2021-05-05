@@ -1,15 +1,15 @@
 # Online-Shop-Project-1
 
 
-Made using paymongo api;
-Node.js + Express web server and MongoDB Atlas for backend;
-HTML, CSS, vanilla javascript for frontend;
+Made using paymongo api; <br/>
+Node.js + Express web server and MongoDB Atlas for backend; <br/>
+HTML, CSS, vanilla javascript for frontend; <br/>
 
 
 
 ![alt text](https://github.com/villanuevajamesfvillanueva/Online-Shop-Project-1/blob/main/public/images/bottledwater.jpg?raw=true)
 
-TODOs:
-  -add 'buy now' functionality
-  -add more payment option (preferably gcash and paypal)
-  -deploy
+TODOs:<br/>
+  -add 'buy now' functionality <br/>
+  -add more payment option (preferably gcash and paypal) <br/>
+  -deploy <br/>
