@@ -27,5 +27,6 @@ TODOs:
   <li>add 'buy now' functionality</li>
   <li>add more payment option (preferably gcash and paypal)</li>
   <li>add search functionality</li>
+  <li>responsiveness</li>
   <li>deploy</li>
 <ul>
