@@ -7,7 +7,7 @@ HTML, CSS, vanilla javascript for frontend; <br/>
 
 
 
-![alt text](https://github.com/villanuevajamesfvillanueva/Online-Shop-Project-1/blob/main/public/images/bottledwater.jpg?raw=true)
+![alt text](https://github.com/villanuevajamesfvillanueva/Online-Shop-Project-1/blob/main/public/images/for_readme/part1.gif?raw=true)
 
 TODOs:<br/>
 <ul>
