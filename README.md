@@ -5,7 +5,7 @@
 <p>Node.js + Express web server and MongoDB Atlas for backend;</p>
 <p>HTML, CSS, vanilla javascript for frontend;</p>
 
-<div>
+<div width="500">
    <img align="left" src="https://github.com/villanuevajamesfvillanueva/Online-Shop-Project-1/blob/main/public/images/for_readme/part1.gif?raw=true">
    <img align="right" src="https://github.com/villanuevajamesfvillanueva/Online-Shop-Project-1/blob/main/public/images/for_readme/part2.gif?raw=true">
 </div>
