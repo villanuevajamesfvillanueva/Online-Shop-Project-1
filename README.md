@@ -32,7 +32,6 @@ TODOs:
    <li>add more payment option (preferably gcash and paypal)</li>
    <li>add search functionality</li>
    <li>responsiveness</li>
-   <li>deploy</li>
 <ul>
 
 TO FIX:
@@ -40,4 +39,5 @@ TO FIX:
    <li>empty cart should not proceed to checkout</li>
    <li>protected icon should have transparent background</li>
    <li>some product name and price being cutoff when displayed in smaller screens</li>
+   <li>extended hamburger and cart modal animation playing when redirected to new route</li>
 <ul>
