@@ -24,9 +24,20 @@
 
 TODOs:
 <ul>
-  <li>add 'buy now' functionality</li>
-  <li>add more payment option (preferably gcash and paypal)</li>
-  <li>add search functionality</li>
-  <li>responsiveness</li>
-  <li>deploy</li>
+   <li>add admin and client accounts</li>
+   <li>add admin dashboard</li>
+   <li>add help modal for valid test card numbers for site visitors</li>
+   <li>add 'buy now' functionality</li>
+   <li>update number of stock in db upon checkout</li>
+   <li>add more payment option (preferably gcash and paypal)</li>
+   <li>add search functionality</li>
+   <li>responsiveness</li>
+   <li>deploy</li>
+<ul>
+
+TO FIX:
+<ul>
+   <li>empty cart should not proceed to checkout</li>
+   <li>protected icon should have transparent background</li>
+   <li>some product name and price being cutoff when displayed in smaller screens</li>
 <ul>

@@ -22,7 +22,7 @@ const dbURI = `mongodb+srv://${mongodbUser}:${mongodbPass}@onlineshopproj1.2iew8
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })   //async task
     .then(result => {
-        //connect to db before listening on port
+        //connect to db before listening to port
         console.log('connected to db...');
         app.listen(process.env.PORT || 3000, () => {
             console.log('listening on port 3000...');
@@ -53,28 +53,6 @@ app.use(morgan('dev'));
 //         .catch(err => console.error(err));
 // });
 
-
-//for retrieving items from db
-app.get('/all_products', (req, res) => {
-    Item.find()
-        .then(result => {
-            res.render('all_products', {
-                title: 'All Products',
-                allProducts: result
-            });
-        })
-        .catch(err => console.error(err))
-});
-
-app.get('/one_product', (req, res) => {
-    Item.findById('6082d6dec07ee9c55523f73d')
-        .then(result => {
-            res.send(result);
-        })
-        .catch(err => console.error(err))
-});
-
-
 // app.get('/', (req, res) => {
 //     Item.find()
 //     .then(result => {
@@ -90,14 +68,14 @@ app.get('/one_product', (req, res) => {
 
 
 
-
+var buyNow_ids = ['609369b0b0af284af0233c75', '609368f2b0af284af0233c74', '609369ccb0af284af0233c76'];
+//buyNow = [for her, for him, shoppinh]
 app.get('/', (req, res) => {
     var favorites_ids = ['6082d60ac07ee9c55523f73c', '6082d6dec07ee9c55523f73d', '6082d700c07ee9c55523f73e', '6082d71fc07ee9c55523f73f'];
     //favorites = [bottled water, plain white shirt, white slip-ons, asian indigenous bag]
     var favorites = [];
 
-    var buyNow_ids = ['6082ed79c07ee9c55523f744', '6082ea62c07ee9c55523f742', '6082eac7c07ee9c55523f743'];
-    //buyNow = [gold mug, black and yellow glasses, red face towel]
+    
     var buyNow = [];
 
     (async function loop() {
@@ -122,9 +100,37 @@ app.get('/', (req, res) => {
         });
      })
     .catch(err => console.error(err))
-
 });
 
+
+//for retrieving items from db
+app.get('/all_products', (req, res) => {
+    Item.find()
+        .then(result => {
+            for (let i = 0; i < result.length; i++) {
+                var id = result[i].id;
+                if (buyNow_ids.includes(id)) {
+                    var removeIndex = result.map(function(item) { return item.id; }).indexOf(id);
+                    result.splice(removeIndex, 1);
+                    i--;
+                }
+            }
+  
+            res.render('all_products', {
+                title: 'All Products',
+                allProducts: result
+            });
+        })
+        .catch(err => console.error(err))
+});
+
+app.get('/one_product', (req, res) => {
+    Item.findById('6082d6dec07ee9c55523f73d')
+        .then(result => {
+            res.send(result);
+        })
+        .catch(err => console.error(err))
+});
 
 
 
@@ -145,9 +151,10 @@ Item.find()
                     item: item
                 });
             });
-        });
+        })
     })
     .catch(err => console.error(err))
+
 
 
 
