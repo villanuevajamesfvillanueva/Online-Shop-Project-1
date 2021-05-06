@@ -40,4 +40,5 @@ TO FIX:
    <li>protected icon should have transparent background</li>
    <li>some product name and price being cutoff when displayed in smaller screens</li>
    <li>extended hamburger and cart modal animation playing when redirected to new route</li>
+   <li>checkout should be disabled when cart is emptied in payment page</li>
 <ul>
