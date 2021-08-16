@@ -1,4 +1,4 @@
-# [Online-Shop-Project-1](https://montaigne-elysees.herokuapp.com/)
+# [Montaigne-Elysees](https://montaigne-elysees.herokuapp.com/)
 
 ### (apologies! please enjoy it in mobile view for now)
 
