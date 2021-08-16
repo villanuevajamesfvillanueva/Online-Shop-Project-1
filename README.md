@@ -1,5 +1,6 @@
 # [Online-Shop-Project-1](https://montaigne-elysees.herokuapp.com/)
 
+### (apologies! please enjoy it in mobile view for now)
 
 <p>Made using paymongo api;</p>
 <p>Node.js + Express web server and MongoDB Atlas for backend;</p>
